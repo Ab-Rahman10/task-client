@@ -20,7 +20,7 @@ const Task = () => {
 
   const categories = ["To-Do", "In Progress", "Done"];
 
-  // getting all tasks from db by tanstack query
+  // getting all tasks from db
   const { data: allTasks = [], refetch } = useQuery({
     queryKey: ["tasks"],
     queryFn: async () => {
