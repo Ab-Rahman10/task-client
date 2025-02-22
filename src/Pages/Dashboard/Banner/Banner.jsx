@@ -25,9 +25,6 @@ const Banner = () => {
             Your Personal Productivity <br /> Ally for Seamless Goal Achievement
             and Stress-Free Task Management.
           </p>
-          <button className="rounded-full bg-blue-500 px-6 py-3 text-lg font-semibold text-white transition-all duration-300 hover:bg-blue-600">
-            Get Started
-          </button>
         </div>
       </div>
     </section>
