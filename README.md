@@ -6,10 +6,8 @@ This project is a task management application built with React. It allows users 
 
 ## Live Links
 
-- **Live Demo:** [http://your-live-demo-link.com](http://your-live-demo-link.com)  
-  _(Replace with your actual live demo URL)_
-- **Backend API:** [http://your-backend-api-link.com](http://your-backend-api-link.com)  
-  _(Replace with your actual backend API link if available)_
+- **Live Demo:** [http://your-live-demo-link.com](http://your-live-demo-link.com)
+- **Backend API:** [http://your-backend-api-link.com](http://your-backend-api-link.com)
 
 ## Dependencies
 

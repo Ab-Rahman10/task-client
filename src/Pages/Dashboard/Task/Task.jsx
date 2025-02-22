@@ -5,7 +5,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://task-server-6u11.onrender.com");
 
 const Task = () => {
   const [newTask, setNewTask] = useState("");
@@ -24,7 +24,9 @@ const Task = () => {
   const { data: allTasks = [], refetch } = useQuery({
     queryKey: ["tasks"],
     queryFn: async () => {
-      const data = await axios.get("http://localhost:5000/tasks");
+      const data = await axios.get(
+        "https://task-server-6u11.onrender.com/tasks"
+      );
       return data.data;
     },
   });
@@ -62,7 +64,10 @@ const Task = () => {
     };
 
     try {
-      const result = await axios.post("http://localhost:5000/task", task);
+      const result = await axios.post(
+        "https://task-server-6u11.onrender.com/task",
+        task
+      );
       console.log(result);
       refetch();
     } catch (error) {
@@ -76,7 +81,9 @@ const Task = () => {
   // removing a task
   const handleDeleteTask = async (id) => {
     try {
-      const result = await axios.delete(`http://localhost:5000/task/${id}`);
+      const result = await axios.delete(
+        `https://task-server-6u11.onrender.com/task/${id}`
+      );
       console.log(result);
       refetch();
     } catch (error) {
@@ -103,7 +110,7 @@ const Task = () => {
 
     try {
       const result = await axios.patch(
-        `http://localhost:5000/task/${id}`,
+        `https://task-server-6u11.onrender.com/task/${id}`,
         updatedTask
       );
       console.log(result);
