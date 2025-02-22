@@ -6,8 +6,7 @@ This project is a task management application built with React. It allows users 
 
 ## Live Links
 
-- **Live Demo:** [http://your-live-demo-link.com](http://your-live-demo-link.com)
-- **Backend API:** [http://your-backend-api-link.com](http://your-backend-api-link.com)
+- **Live Demo:** [https://task-management-b6464.web.app/](http://your-live-demo-link.com)
 
 ## Dependencies
 
